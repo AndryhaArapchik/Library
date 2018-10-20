@@ -13,11 +13,11 @@ namespace DataAccessLayer.Models
         public string City { get; set; }
         public string DateOfBirth { get; set; }
         public string DateOfDeath { get; set; }
-        public List<Feedback> Reviews { get; set; }
-        public List<Book> Books { get; set; }
+        public virtual List<Feedback> Reviews { get; set; }
+        public virtual List<Book> Books { get; set; }
         public string Description { get; set; }
-        public List<File> Photos { get; set; }
-        public User Editor { get; set; }
+        public virtual List<File> Photos { get; set; }
+        public virtual User Editor { get; set; }
         public DateTime EditingDate { get; set; }
     }
 }

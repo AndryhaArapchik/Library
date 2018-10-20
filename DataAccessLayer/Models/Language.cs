@@ -8,7 +8,7 @@ namespace DataAccessLayer.Models
         public string Title { get; set; }
         public string Decription { get; set; }
         public string Rating { get; set; }
-        public User Editor { get; set; }
+        public virtual User Editor { get; set; }
         public DateTime EditingDate { get; set; }
     }
 }

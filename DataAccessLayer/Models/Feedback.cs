@@ -7,7 +7,7 @@ namespace DataAccessLayer.Models
         public Guid Id { get; set; }
         public string Decription { get; set; }
         public int Rating { get; set; }
-        public User Author { get; set; }
+        public virtual User Author { get; set; }
         public DateTime CreationDate { get; set; }
     }
 }

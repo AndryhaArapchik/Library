@@ -17,10 +17,10 @@ namespace DataAccessLayer.Models
         public string PassportDetails { get; set; }
         public string DateOfDeath { get; set; }
         public int Rating { get; set; }
-        public List<Book> Books { get; set; }
+        public virtual List<Book> Books { get; set; }
         public string Description { get; set; }
         public File Photo { get; set; }
-        public User Editor { get; set; }
+        public virtual User Editor { get; set; }
         public DateTime EditingDate { get; set; }
         public Role Role { get; set; }
     }

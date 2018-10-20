@@ -13,9 +13,9 @@ namespace DataAccessLayer.Models
         public string Adress { get; set; }
         public string Email { get; set; }
         public string Telephone { get; set; }
-        public List<Feedback> Reviews { get; set; }
-        public List<Book> Books { get; set; }
-        public User Editor { get; set; }
+        public virtual List<Feedback> Reviews { get; set; }
+        public virtual List<Book> Books { get; set; }
+        public virtual User Editor { get; set; }
         public DateTime EditingDate { get; set; }
     }
 }
