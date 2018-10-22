@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DataAccessLayer.Models
+namespace DataAccessLayer.Entities
 {
     public class Book
     {

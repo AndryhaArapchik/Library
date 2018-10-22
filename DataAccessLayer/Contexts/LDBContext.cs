@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Models;
+﻿using DataAccessLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,12 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer
+namespace DataAccessLayer.Contexts
 {
     public class LDBContext : DbContext
     {
         public LDBContext()
            : base("DbConnection")
+        { }
+        public LDBContext(string connectionString)
+           : base(connectionString)
         { }
 
         public DbSet<Author> Authors { get; set; }

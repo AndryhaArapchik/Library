@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataAccessLayer.Models
+namespace DataAccessLayer.Entities
 {
     public class Language
     {
